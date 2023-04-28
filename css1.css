@@ -7,22 +7,37 @@ body {
 }
 
 .header {
+  display: inline-block;
   text-align: center;
-  padding: 0 10%;
   position: fixed;
-  width: 80%;
+  width: 100%;
   z-index: 2;
   box-shadow: 7px 10px 43px -20px rgba(0,0,0,0.75);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); 
+  max-height: 5em;
 }
 
+.logo{
+  float: left;
+  position: relative;
+  top: -.55em;
+  left: 4em;
+}
+
+.nav{
+  float: right;
+  position: relative;
+  right: 4em;
+}
 .nav li {
   list-style: none;
   display: inline-block;
   margin-top: 10px;
   font-size: 25px;
   font-weight: bold;
+  text-align: right;
+  padding: 0 20px;
 }
 
 .header_link:link {
@@ -68,13 +83,13 @@ body {
   text-align: left;
   float: right;
   line-height: 0.60;
-  letter-spacing: .1em;
+  letter-spacing: 0em;
+  font-family: "Poppins", 'sans serif';
   color: rgb(255, 255, 255);
   font-weight: 900;
   position: relative;
   top: 150px;
   right: 20%;
-  z-index: 1;
   text-shadow: 0 1px 0 hsl(174, 5%, 80%),
     0 2px 0 hsl(174, 5%, 75%),
     0 3px 0 hsl(174, 5%, 70%),
@@ -89,6 +104,7 @@ body {
     0 5px 10px rgba(0, 0, 0, .2),
     0 10px 10px rgba(0, 0, 0, .2),
     0 10px 10px rgba(0, 0, 0, .3);
+    
 }
 
 .bio {
@@ -304,9 +320,14 @@ body {
     margin-left: 5%;
     margin-right: 5%;
   }
-
+  .logo {
+    position: relative;
+    top: -0.25em;
+  }
   .header ul li {
     font-size: 20px;
+    padding: .55em .15em;
+
   }
 
   .mname {
