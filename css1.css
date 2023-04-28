@@ -12,7 +12,7 @@ body {
   position: fixed;
   width: 80%;
   z-index: 2;
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0, .2), rgba(255, 255, 255, 0));
+  box-shadow: 7px 10px 43px -20px rgba(0,0,0,0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -27,6 +27,7 @@ body {
 
 .header_link:link {
   text-decoration: none;
+  color: black;
 }
 
 .header_link:visited {
@@ -51,41 +52,43 @@ body {
 
 .image {
   background-image: url("IMG_0476.PNG");
-  height: 530px;
+  height: 550px;
   width: 100%;
   background-repeat: no-repeat;
-  background-attachment:  fixed;
+  background-attachment: fixed;
   background-size: contain;
   opacity: .95;
   left: -50%;
-  background-position: -250px 100px;
+  background-position: -250px 150px;
 }
 
 .mname {
   margin: auto;
-  font-size: 70px;
-  text-align: center;
+  font-size: 120px;
+  text-align: left;
   float: right;
-  color: rgb(0, 0, 0);
+  line-height: 0.60;
+  letter-spacing: .1em;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
   position: relative;
   top: 150px;
   right: 20%;
   z-index: 1;
-  text-shadow: 0 1px 0 hsl(174,5%,80%),
-  0 2px 0 hsl(174,5%,75%),
-  0 3px 0 hsl(174,5%,70%),
-  0 4px 0 hsl(174,5%,66%),
-  0 5px 0 hsl(174,5%,64%),
-  0 6px 0 hsl(174,5%,62%),
-  0 7px 0 hsl(174,5%,61%),
-  0 8px 0 hsl(174,5%,60%),
-
-  0 0 5px rgba(0,0,0,.05),
- 0 1px 3px rgba(0,0,0,.2),
- 0 3px 5px rgba(0,0,0,.2),
-0 5px 10px rgba(0,0,0,.2),
-0 10px 10px rgba(0,0,0,.2),
-0 20px 20px rgba(0,0,0,.3);
+  text-shadow: 0 1px 0 hsl(174, 5%, 80%),
+    0 2px 0 hsl(174, 5%, 75%),
+    0 3px 0 hsl(174, 5%, 70%),
+    0 4px 0 hsl(174, 5%, 66%),
+    0 5px 0 hsl(174, 5%, 64%),
+    0 6px 0 hsl(174, 5%, 62%),
+    0 7px 0 hsl(174, 5%, 61%),
+    0 8px 0 hsl(174, 5%, 60%),
+    0 0 5px rgba(0, 0, 0, .05),
+    0 1px 3px rgba(0, 0, 0, .2),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .2),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 10px 10px rgba(0, 0, 0, .3);
 }
 
 .bio {
@@ -203,6 +206,7 @@ body {
   float: right;
   width: 50%;
 }
+
 .work1,
 .work3 {
   clear: both;
@@ -214,17 +218,20 @@ body {
   padding-bottom: 30px;
 }
 
-.w1, .w3 {
+.w1,
+.w3 {
   width: 40%;
   float: left;
   margin-left: 20px;
 }
 
-.w1 ul, .w3 ul{
+.w1 ul,
+.w3 ul {
   clear: both;
   border-top: 1px solid rgb(0, 0, 0);
   padding-top: 20px;
 }
+
 /*** CSS for right side work experience ***/
 .work2,
 .work4 {
@@ -247,17 +254,20 @@ body {
   width: 50%;
 }
 
-.w2, .w4 {
+.w2,
+.w4 {
   width: 40%;
   float: right;
   margin-right: 20px;
 }
 
-.w2 ul, .w4 ul{
-    clear: both;
-    border-top: 1px solid rgb(0, 0, 0);
-    padding-top: 20px; 
+.w2 ul,
+.w4 ul {
+  clear: both;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding-top: 20px;
 }
+
 .w4Photo {
   background: url("superstore.jpg");
   background-repeat: no-repeat;
@@ -268,6 +278,7 @@ body {
   float: left;
   width: 50%;
 }
+
 /*** Footer ***/
 .Footer {
   margin-top: 50px;
