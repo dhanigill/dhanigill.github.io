@@ -10,18 +10,21 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-.header {
+.header{
   display: inline-block;
   text-align: center;
   position: fixed;
   width: 100%;
   z-index: 2;
-  box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+
   max-height: 5em;
 }
-
+.shadow{
+  box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
+  transition: box-shadow 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
 .logo {
   float: left;
   max-width: 6.5em;
