@@ -49,6 +49,5 @@ document.addEventListener("DOMContentLoaded", function () {
       tablink.classList.add('active');
     }
   })
-
   
 });

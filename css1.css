@@ -12,24 +12,26 @@ body {
   position: fixed;
   width: 100%;
   z-index: 2;
-  box-shadow: 7px 10px 43px -20px rgba(0,0,0,0.75);
+  box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px);
   max-height: 5em;
 }
 
-.logo{
+.logo {
   float: left;
+  max-width: 6.5em;
   position: relative;
   top: -.55em;
   left: 4em;
 }
 
-.nav{
+.nav {
   float: right;
   position: relative;
   right: 4em;
 }
+
 .nav li {
   list-style: none;
   display: inline-block;
@@ -73,8 +75,7 @@ body {
   background-attachment: fixed;
   background-size: contain;
   opacity: .95;
-  left: -50%;
-  background-position: -250px 150px;
+  background-position: -15em 10em;
 }
 
 .mname {
@@ -104,7 +105,7 @@ body {
     0 5px 10px rgba(0, 0, 0, .2),
     0 10px 10px rgba(0, 0, 0, .2),
     0 10px 10px rgba(0, 0, 0, .3);
-    
+
 }
 
 .bio {
@@ -132,11 +133,6 @@ body {
   line-height: 1.5;
 }
 
-.bioback {
-  float: right;
-  width: 10%;
-  position: relative;
-}
 
 .Education {
   margin-top: 100px;
@@ -210,6 +206,7 @@ body {
   min-height: 420px;
   float: right;
   width: 50%;
+  padding-bottom: 30px;
 }
 
 .w3Photo {
@@ -231,7 +228,7 @@ body {
   margin-top: 20px;
   left: 0;
   width: 100%;
-  padding-bottom: 30px;
+  
 }
 
 .w1,
@@ -247,7 +244,14 @@ body {
   border-top: 1px solid rgb(0, 0, 0);
   padding-top: 20px;
 }
-
+.d1{
+  float: left;
+  font-weight: bold;
+}
+.d2{
+  float: right;
+  font-weight: bold;
+}
 /*** CSS for right side work experience ***/
 .work2,
 .work4 {
@@ -313,36 +317,71 @@ body {
 /***** Different display sizes ****/
 @media screen and (max-width: 900px) {
 
+  
+  .bio {
+    width: 100%;
+  }
 
-  .bio,
   .Education,
   .Work {
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 100%;
+  }
+  .w1,.w2,.w3,.w4{
+    clear: both;
+    float: none;
+    width: 90%;
+  }
+  .w2,.w4{
+    margin-left: 20px;
+  }
+  .w1Photo,.w2Photo,.w3Photo,.w4Photo{
+    display: none;
+  }
+  .d2{
+    float: left;
   }
   .logo {
     position: relative;
     top: -0.25em;
+    left: 0.25em;
   }
-  .header ul li {
+
+  .nav {
+    right: 0em;
+  }
+
+  .nav li {
     font-size: 20px;
     padding: .55em .15em;
+  }
 
+  .image {
+    background-position: -10em 10em;
   }
 
   .mname {
-    font-size: 30px;
+    font-size: 40px;
+    right: 0;
+    top: 300px;
+    line-height: .7;
   }
 
   .mname span {
-    font-size: 35px !important;
+    font-size: 45px !important;
   }
 
   .stillblank {
     padding: 230px 0 !important;
   }
-
+  .EduPhoto{
+    display: none;
+  }
+  .edu{
+    right: 0;
+    padding: 0 20px 0 20px;
+  }
 }
+
 
 /*** Properties for project .html ***/
 
