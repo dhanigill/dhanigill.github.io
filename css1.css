@@ -4,27 +4,30 @@ body {
   margin: 0;
   display: block;
   width: 100%;
-  
+
 }
-.all{
+
+.all {
   overflow-x: hidden;
   position: relative;
 }
-.header{
+
+.header {
   display: inline-block;
   text-align: center;
   position: fixed;
   width: 100%;
   z-index: 2;
-
   max-height: 5em;
 }
-.shadow{
+
+.shadow {
   box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
   transition: box-shadow 0.3s ease-in-out;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+
 .logo {
   float: left;
   max-width: 6.5em;
@@ -235,7 +238,7 @@ body {
   margin-top: 20px;
   left: 0;
   width: 100%;
-  
+
 }
 
 .w1,
@@ -251,14 +254,17 @@ body {
   border-top: 1px solid rgb(0, 0, 0);
   padding-top: 20px;
 }
-.d1{
+
+.d1 {
   float: left;
   font-weight: bold;
 }
-.d2{
+
+.d2 {
   float: right;
   font-weight: bold;
 }
+
 /*** CSS for right side work experience ***/
 .work2,
 .work4 {
@@ -324,7 +330,7 @@ body {
 /***** Different display sizes ****/
 @media screen and (max-width: 900px) {
 
-  
+
   .bio {
     width: 100%;
   }
@@ -333,20 +339,32 @@ body {
   .Work {
     width: 100%;
   }
-  .w1,.w2,.w3,.w4{
+
+  .w1,
+  .w2,
+  .w3,
+  .w4 {
     clear: both;
     float: none;
     width: 90%;
   }
-  .w2,.w4{
+
+  .w2,
+  .w4 {
     margin-left: 20px;
   }
-  .w1Photo,.w2Photo,.w3Photo,.w4Photo{
+
+  .w1Photo,
+  .w2Photo,
+  .w3Photo,
+  .w4Photo {
     display: none;
   }
-  .d2{
+
+  .d2 {
     float: left;
   }
+
   .logo {
     position: relative;
     top: -0.25em;
@@ -380,10 +398,12 @@ body {
   .stillblank {
     padding: 230px 0 !important;
   }
-  .EduPhoto{
+
+  .EduPhoto {
     display: none;
   }
-  .edu{
+
+  .edu {
     right: 0;
     padding: 0 20px 0 20px;
   }

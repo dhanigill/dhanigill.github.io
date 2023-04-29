@@ -63,6 +63,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-
   handler.observe(Pname[0]);
 });
