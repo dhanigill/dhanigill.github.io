@@ -1,44 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function fadeIn(elem) {
-    if (!elem) return;
-    let distInView =
-      elem.getBoundingClientRect().top - window.innerHeight + 100;
-    if (distInView < 0) {
-      elem.classList.add("inView");
-    } else {
-      elem.classList.remove("inView");
-    }
-  }
-
-  function fadeOut(elem) {
-    if (!elem) return;
-    let distInView =
-      elem.getBoundingClientRect().bottom - window.innerHeight + 350;
-    if (distInView < 0) {
-      elem.classList.remove("inView");
-      elem.classList.add("outView");
-    } else {
-      elem.classList.remove("outView");
-    }
-  }
-
-  //calling function for different divs
-  let elemName = document.querySelector(".mname");
-  window.addEventListener("scroll", () => fadeIn(elemName));
-  window.addEventListener("scroll", () => fadeOut(elemName));
-
-  let elemBio = document.querySelector(".bio");
-  window.addEventListener("scroll", () => fadeIn(elemBio));
-  window.addEventListener("scroll", () => fadeOut(elemBio));
-
-  let elemEducation = document.querySelector(".Education");
-  window.addEventListener("scroll", () => fadeIn(elemEducation));
-  window.addEventListener("scroll", () => fadeOut(elemEducation));
-
-  let elemWork = document.querySelector(".Work");
-  window.addEventListener("scroll", () => fadeIn(elemWork));
-  window.addEventListener("scroll", () => fadeOut(elemWork));
-
   //function for Nav bar active link color
 
   const tab = document.querySelectorAll(".header_link");
@@ -49,19 +9,46 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // function for header's shadow
   const Pname = document.getElementsByClassName("pname");
   const header = document.getElementsByClassName("header");
 
   const handler = new IntersectionObserver((entries) => {
     if (header) {
       if (!entries[0].isIntersecting) {
-        console.log("show");
         header[0].classList.add("shadow");
       } else {
-        console.log("remove");
         header[0].classList.remove("shadow");
       }
     }
   });
   handler.observe(Pname[0]);
+
+  // Fade in and out
+
+  const elemName1 = document.querySelector(".mname");
+  const elemBio1 = document.querySelector(".bio");
+  const elemEducation1 = document.querySelector(".Education");
+  const elemWork1 = document.querySelector(".Work");
+  const elemFooter1 = document.querySelector(".Footer");
+
+  const fader = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Fade in observed elements that are in view
+        entry.target.classList.replace("fadeOut", "fadeIn");
+        
+      } else {
+        // Fade out observed elements that are not in view
+        entry.target.classList.replace("fadeIn", "fadeOut");
+      }
+    })
+  }, {rootMargin: '-200px'});
+
+  fader.observe(elemName1);
+  fader.observe(elemBio1);
+  fader.observe(elemEducation1);
+  fader.observe(elemWork1);
+  fader.observe(elemFooter1);
+
 });
