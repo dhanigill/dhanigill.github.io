@@ -97,5 +97,13 @@
     .sliderItem {
         width: 50%;
         left: 17.5%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .sliderHead {
+        font-size: 2em;
+    }
+    .sliderItem p{
+        font-size: 1em;
     }
 }
