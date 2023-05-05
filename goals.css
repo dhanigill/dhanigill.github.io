@@ -1,0 +1,101 @@
+.slider {
+    display: flex;
+    position: relative;
+    top: 8em;
+    margin-bottom: 15em;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 100px;
+    min-height: 30em;
+    padding: 7% 0;
+}
+
+.sliderItem {
+    color: white;
+    border-radius: 20px;
+    opacity: 0;
+    filter: blur(2px);
+    padding: 10px 20px;
+    min-height: 21em;
+    width: 50%;
+    position: absolute;
+    left: 12%;
+    line-height: 1.3em;
+    transition: ease-in-out 1s;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;   
+}
+
+.sliderItem:hover {
+    scale: 1.1;
+    transition: ease-in-out 0.5s;
+}
+.slider p{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    line-height: .95em;
+    margin: 0;
+    padding-top: 10px;
+    min-width: 50%;
+}
+.sliderHead {
+    color: rgb(255, 145, 0);
+    font-weight: 900;
+    font-size: 4em;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    line-height: 1.1em;
+}
+
+.vis {
+    filter: none;
+    opacity: 1;
+}
+
+.btnL {
+    z-index: 2;
+    border:none;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    left: 7%;
+    padding: 1%;
+    position: absolute;
+    top: 40%;
+
+}
+
+.btnR {
+    z-index: 2;
+    border:none;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    right: 7%;
+    padding: 1%;
+    top: 40%;
+}
+
+.btnL:hover,
+.btnR:hover {
+    transform: translateX(-5px);
+    transition: ease-in-out 0.5s;
+}
+
+
+@media screen and (max-width: 900px) {
+    .slider {
+        padding-top: 10%;
+    }
+
+    .sliderItem {
+        width: 50%;
+        left: 17.5%;
+    }
+}
