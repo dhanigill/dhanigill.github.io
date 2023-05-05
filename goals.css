@@ -66,7 +66,7 @@
     padding: 1%;
     position: absolute;
     top: 40%;
-
+    scale: 1.5;
 }
 
 .btnR {
@@ -80,10 +80,14 @@
     right: 7%;
     padding: 1%;
     top: 40%;
+    scale: 1.5;
 }
-
-.btnL:hover,
-.btnR:hover {
+.btnR:hover{
+    transform: translateX(5px);
+    transition: ease-in-out 0.5s;
+}
+.btnL:hover
+ {
     transform: translateX(-5px);
     transition: ease-in-out 0.5s;
 }
