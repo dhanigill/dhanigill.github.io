@@ -17,7 +17,7 @@ CSS for header
 
 #menu {
   display: none;
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 400;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
@@ -57,13 +57,13 @@ CSS for header
   z-index: 2;
   max-height: 5em;
   transition: box-shadow .5s;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .shadow {
   box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  background: transparent !important;
+ 
 }
 
 .logo {
@@ -118,10 +118,9 @@ CSS for header
     border-bottom-left-radius: 5%;
     padding: 5em;
     min-height: 70vh;
-    box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
+    
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    background: transparent !important;
   }
 
   .nav li {

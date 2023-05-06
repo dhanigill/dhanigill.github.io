@@ -54,6 +54,8 @@
 
     .Education {
       width: 100%;
+      margin-left: 0;
+      text-align: left;
     }
   
     .EduPhoto {

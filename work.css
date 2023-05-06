@@ -135,6 +135,9 @@
     .Work {
         width: 100%;
     }
+    .Work h1{
+        text-align: left;
+    }
     .w1,
     .w2,
     .w3,
