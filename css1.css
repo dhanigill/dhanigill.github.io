@@ -54,7 +54,7 @@ CSS for header
   text-align: center;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 999;
   max-height: 5em;
   transition: box-shadow .5s;
   backdrop-filter: blur(8px);
@@ -117,8 +117,7 @@ CSS for header
     border: 0px solid transparent;
     border-bottom-left-radius: 5%;
     padding: 5em;
-    min-height: 70vh;
-    
+    min-height: 70vh;    
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }

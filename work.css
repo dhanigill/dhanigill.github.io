@@ -137,6 +137,8 @@
     }
     .Work h1{
         text-align: left;
+        padding-left: 2%;
+        margin-left: 0;
     }
     .w1,
     .w2,

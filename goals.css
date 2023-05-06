@@ -67,7 +67,7 @@
 }
 
 .btnL {
-    z-index: 2;
+    z-index: 1;
     border: none;
     background: none;
     text-align: center;
@@ -81,7 +81,7 @@
 }
 
 .btnR {
-    z-index: 2;
+    z-index: 1;
     border: none;
     background: none;
     text-align: center;
