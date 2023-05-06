@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
       tablink.classList.add("active");
     } 
   });
-
+  if(windowHref=='/'){
+    tab[1].classList.remove("active");
+    tab[2].classList.remove("active");
+    }
 
   // function for header's shadow
   const Pname = document.getElementsByClassName("pname");
