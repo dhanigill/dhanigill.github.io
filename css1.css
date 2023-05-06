@@ -21,7 +21,6 @@ CSS for header
   font-weight: 400;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
-  background-color: #ffffff;
   color: #000;
   text-align: right;
 }
@@ -29,21 +28,24 @@ CSS for header
 #menu::before {
   content: "≡";
 }
+
 #menu.show::before {
   content: "X";
 }
+
 .show {
   display: block !important;
   animation: fadeInOpacity .5s ease-in-out;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		right: -200px;
-	}
-	100% {
-		right: 0px;
-	}
+  0% {
+    right: -200px;
+  }
+
+  100% {
+    right: 0px;
+  }
 }
 
 
@@ -109,17 +111,21 @@ CSS for header
   .nav {
     right: 0;
     flex-direction: column;
-    background-color: #ffffff;
     display: none;
     margin-top: 0;
-    padding-right: 1em;
+    top: 5em;
     border: 0px solid transparent;
-    border-bottom-left-radius: 20%;
-    padding-bottom: 1em;
+    border-bottom-left-radius: 5%;
+    padding: 5em;
+    min-height: 70vh;
+    box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: transparent !important;
   }
 
   .nav li {
-    font-size: 20px;
+    font-size: 30px;
     padding: 0.55em 0.15em;
     display: block;
   }
@@ -135,13 +141,10 @@ CSS for header
 
   .logo {
     position: relative;
-    top: -5.5em;
+    top: -5.8em;
     left: 0.25em;
   }
 
-  .header {
-    background-color: rgb(255, 255, 255);
-  }
 }
 
 /*** Footer ***/
