@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
   const mainnav = document.querySelector(".nav");
   const hambutton = document.querySelector("#menu");
 
@@ -9,14 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //function for Nav bar active link color
-
   const tab = document.querySelectorAll(".header_link");
   const windowHref = document.location.pathname;
+  
+  console.log(windowHref);
   tab.forEach((tablink) => {
     if (tablink.href.includes(windowHref)) {
       tablink.classList.add("active");
-    }
+    } 
   });
+
 
   // function for header's shadow
   const Pname = document.getElementsByClassName("pname");
