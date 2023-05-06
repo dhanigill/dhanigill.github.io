@@ -10,9 +10,43 @@ body {
 .all {
   position: relative;
 }
+
 /*
 CSS for header
 */
+
+#menu {
+  display: none;
+  font-size: 4rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #ffffff;
+  color: #000;
+  text-align: right;
+}
+
+#menu::before {
+  content: "≡";
+}
+#menu.show::before {
+  content: "X";
+}
+.show {
+  display: block !important;
+  animation: fadeInOpacity .5s ease-in-out;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		right: -200px;
+	}
+	100% {
+		right: 0px;
+	}
+}
+
+
 .header {
   display: inline-block;
   text-align: center;
@@ -20,7 +54,7 @@ CSS for header
   width: 100%;
   z-index: 2;
   max-height: 5em;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow .5s;
 }
 
 .shadow {
@@ -39,8 +73,7 @@ CSS for header
 }
 
 .nav {
-  float: right;
-  position: relative;
+  position: absolute;
   right: 4em;
 }
 
@@ -73,23 +106,41 @@ CSS for header
 }
 
 @media screen and (max-width: 900px) {
-  .logo {
-      position: relative;
-      top: -0.25em;
-      left: 0.25em;
-  }
-
-  .header {
-      background-color: rgb(255, 255, 255);
-  }
-
   .nav {
-      right: 0em;
+    right: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    display: none;
+    margin-top: 0;
+    padding-right: 1em;
+    border: 0px solid transparent;
+    border-bottom-left-radius: 20%;
+    padding-bottom: 1em;
   }
 
   .nav li {
-      font-size: 20px;
-      padding: 0.55em 0.15em;
+    font-size: 20px;
+    padding: 0.55em 0.15em;
+    display: block;
+  }
+
+  .nav a {
+    text-align: center;
+  }
+
+  #menu {
+    display: block !important;
+    z-index: 2;
+  }
+
+  .logo {
+    position: relative;
+    top: -5.5em;
+    left: 0.25em;
+  }
+
+  .header {
+    background-color: rgb(255, 255, 255);
   }
 }
 
@@ -108,4 +159,3 @@ CSS for header
   list-style: none;
   margin-top: 10px;
 }
-
