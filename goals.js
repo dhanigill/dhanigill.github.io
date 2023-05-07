@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("stopped");
   });
   slider.addEventListener("mouseleave", () => {
-    setInterval(nextS, 5000);
+    inter = setInterval(nextS, 5000);    
     console.log("restart");
   });
 
