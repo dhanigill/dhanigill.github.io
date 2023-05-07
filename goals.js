@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // maximum number of slides
   let maxSlide = slides.length - 1;
 
-  const slider = document.querySelector(".slider");
+  var slider = document.querySelector(".slider");
   //Auto play
   const inter = setInterval(nextS, 5000);
   slider.addEventListener("mouseenter", () => {
