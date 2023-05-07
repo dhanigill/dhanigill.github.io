@@ -13,16 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const tab = document.querySelectorAll(".header_link");
   const windowHref = document.location.pathname;
   
-  console.log(windowHref);
   tab.forEach((tablink) => {
     if (tablink.href.includes(windowHref)) {
       tablink.classList.add("active");
     } 
   });
+
   if(windowHref=='/'){
     tab[1].classList.remove("active");
     tab[2].classList.remove("active");
-    }
+  }
+
 
   // function for header's shadow
   const Pname = document.getElementsByClassName("pname");
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     { root: null },
-    { rootMargin: "-200px" }
+    { rootMargin: "-200px"}
   );
 
   fader.observe(elemName1);

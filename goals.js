@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // maximum number of slides
   let maxSlide = slides.length - 1;
 
-  var slider = document.querySelector(".slider");
+  const slider = document.querySelector(".slider");
   //Auto play
-  const inter = setInterval(nextS, 5000);
+  var inter = setInterval(nextS, 5000);
   slider.addEventListener("mouseenter", () => {
     clearInterval(inter);
     console.log("stopped");
   });
   slider.addEventListener("mouseleave", () => {
-    inter = setInterval(nextS, 5000);    
+    inter = setInterval(nextS, 5000);
     console.log("restart");
   });
 
