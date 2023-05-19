@@ -63,7 +63,7 @@ CSS for header
 
 .shadow {
   box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
- 
+
 }
 
 .logo {
@@ -117,7 +117,7 @@ CSS for header
     border: 0px solid transparent;
     border-bottom-left-radius: 5%;
     padding: 5em;
-    min-height: 70vh;    
+    min-height: 70vh;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
@@ -148,7 +148,7 @@ CSS for header
 /*** Footer ***/
 .Footer {
   margin-top: 50px;
-  padding-bottom: 250px;
+  padding-bottom: 230px;
   padding-top: 160px;
   text-align: center;
   width: 100%;
@@ -159,4 +159,18 @@ CSS for header
   display: inline-block;
   list-style: none;
   margin-top: 10px;
+}
+
+.time {
+  display: block;
+  background-color: #000;
+  color: white;
+  padding:0 10px;
+  height: 20px;
+}
+#time{
+  float: right;
+}
+#date{
+  float: left;
 }

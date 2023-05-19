@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   const mainnav = document.querySelector(".nav");
   const hambutton = document.querySelector("#menu");
 
@@ -12,18 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
   //function for Nav bar active link color
   const tab = document.querySelectorAll(".header_link");
   const windowHref = document.location.pathname;
-  
+
   tab.forEach((tablink) => {
     if (tablink.href.includes(windowHref)) {
       tablink.classList.add("active");
-    } 
+    }
   });
 
-  if(windowHref=='/'){
+  if (windowHref == "/") {
     tab[1].classList.remove("active");
     tab[2].classList.remove("active");
   }
-
 
   // function for header's shadow
   const Pname = document.getElementsByClassName("pname");
@@ -60,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     { root: null },
-    { rootMargin: "-200px"}
+    { rootMargin: "-200px" }
   );
 
   fader.observe(elemName1);
@@ -68,4 +66,30 @@ document.addEventListener("DOMContentLoaded", function () {
   fader.observe(elemEducation1);
   fader.observe(elemWork1);
   fader.observe(elemFooter1);
+
+  //Function to display time
+
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+
+    y = today.getFullYear();
+    m = today.getMonth() + 1;
+    d = today.getDate();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+    setTimeout(startTime, 1000);
+  }
+
+  function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    } // add zero in front of numbers < 10
+    return i;
+  }
+  startTime();
 });
