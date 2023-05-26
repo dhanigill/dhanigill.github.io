@@ -35,8 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-  handler.observe(Pname[0]);
-
+  if (Pname.length == 0) {
+    console.log();
+  } else {
+    handler.observe(Pname[0]);
+  }
   // Fade in and out
 
   const elemName1 = document.querySelector(".mname");
@@ -60,13 +63,21 @@ document.addEventListener("DOMContentLoaded", function () {
     { root: null },
     { rootMargin: "-200px" }
   );
-
-  fader.observe(elemName1);
-  fader.observe(elemBio1);
-  fader.observe(elemEducation1);
-  fader.observe(elemWork1);
-  fader.observe(elemFooter1);
-
+  if (
+    elemName1 == null ||
+    elemBio1 == null ||
+    elemEducation1 == null ||
+    elemWork1 == null ||
+    elemFooter1 == null
+  ) {
+    console.log();
+  } else {
+    fader.observe(elemName1);
+    fader.observe(elemBio1);
+    fader.observe(elemEducation1);
+    fader.observe(elemWork1);
+    fader.observe(elemFooter1);
+  }
   //Function to display time
 
   function startTime() {
@@ -74,14 +85,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
-
     y = today.getFullYear();
-    m = today.getMonth() + 1;
+    mm = today.getMonth() + 1;
     d = today.getDate();
     m = checkTime(m);
     s = checkTime(s);
+
     document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
-    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+
+    document.getElementById("date").innerHTML = d + "/" + mm + "/" + y;
     setTimeout(startTime, 1000);
   }
 

@@ -17,11 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var inter = setInterval(nextS, 5000);
   slider.addEventListener("mouseenter", () => {
     clearInterval(inter);
-    console.log("stopped");
   });
   slider.addEventListener("mouseleave", () => {
     inter = setInterval(nextS, 5000);
-    console.log("restart");
   });
 
   nextSlide.addEventListener("click", nextS);
