@@ -1,0 +1,40 @@
+.bio {
+    clear: both;
+    opacity: 0;
+    transform: none;
+    margin-bottom: 100px;
+    height: 300px;
+    margin: 0px 2%;
+    width: 50%;
+}
+
+.bio h1 {
+    float: left;
+    color: rgb(255, 145, 0);
+    top: 0;
+    padding: 30px 0;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.bio p {
+    float: left;
+    padding-top: 50px;
+    line-height: 1.5;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 1s;
+}
+@media screen and (max-width: 900px) {
+
+    .bio {
+      width: 96%;
+    }
+}

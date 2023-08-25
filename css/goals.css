@@ -1,0 +1,153 @@
+.slider {
+    display: flex;
+    position: relative;
+    top: 8em;
+    margin-bottom: 15em;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 100px;
+    min-height: 35em;
+    padding: 7% 0;
+}
+
+.sliderItem {
+    color: white;
+    border-radius: 20px;
+    opacity: 0;
+    filter: blur(2px);
+    padding: 10px 20px;
+    min-height: 21em;
+    max-width: 75%;
+    position: absolute;
+    left: 12%;
+    line-height: 1.3em;
+    transition: ease-in-out 1s;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.sliderLeft:hover {
+    scale: 1.1;
+    transition: ease-in-out 0.5s;
+}
+
+.sliderImg {
+    max-width: 50%;
+    height: fit-content;
+}
+
+.last {
+    max-width: 40%;
+}
+
+.slider p {
+    font-size: 1.1em;
+    color: rgb(71, 71, 71);
+    line-height: .95em;
+    margin: 0;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.sliderHead {
+    color: rgb(255, 145, 0);
+    font-weight: 900;
+    font-size: 4em;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    line-height: 1.1em;
+}
+
+.vis {
+    filter: none;
+    opacity: 1;
+}
+
+.btnL {
+    z-index: 1;
+    border: none;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    left: 7%;
+    padding: 1%;
+    position: absolute;
+    top: 40%;
+    scale: 1.5;
+}
+
+.btnR {
+    z-index: 1;
+    border: none;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    right: 7%;
+    padding: 1%;
+    top: 40%;
+    scale: 1.5;
+}
+
+.btnR:hover {
+    transform: translateX(5px);
+    transition: ease-in-out 0.5s;
+}
+
+.btnL:hover {
+    transform: translateX(-5px);
+    transition: ease-in-out 0.5s;
+}
+
+.goalsParallax {
+    background-image: url(/img/Goal.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    background-size: cover;
+    opacity: 0.65;
+}
+
+@media screen and (max-width: 900px) {
+    .slider {
+        padding-top: 10%;
+    }
+
+    .sliderItem {
+        width: 60%;
+        left: 15%;
+        flex-direction: column;
+        gap: 5%;
+        min-height: fit-content;
+    }
+
+    .sliderHead {
+        font-size: 2em;
+    }
+
+    .sliderItem p {
+        font-size: 1em;
+    }
+
+    .goalsParallax {
+        display: none;
+    }
+
+    .sliderItem hr {
+        height: 0.01px;
+        width: 100%;
+        border-top: 1px solid rgb(109, 109, 109);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .sliderImg{
+        max-width: 100%;
+        padding-top: 10%;
+    }
+}

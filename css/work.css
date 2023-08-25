@@ -1,0 +1,163 @@
+.Work {
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+    clear: both;
+    line-height: 1.5;
+    opacity: 0;
+    transform: none;
+}
+
+.Work h1 {
+    color: rgb(255, 145, 0);
+    top: 0;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.w1Photo {
+    background: url("/img/RR1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: center right;
+    min-height: 420px;
+    float: right;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+.w3Photo {
+    background: url("/img/hertz.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: center right;
+    min-height: 420px;
+    float: right;
+    width: 50%;
+}
+
+.work1,
+.work3 {
+    clear: both;
+    display: inline-block;
+    padding-top: 20px;
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+}
+
+.w1,
+.w3 {
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+}
+
+.w1 ul,
+.w3 ul {
+    clear: both;
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+.d1 {
+    float: left;
+    font-weight: bold;
+}
+
+.d2 {
+    float: right;
+    font-weight: bold;
+}
+
+/*** CSS for right side work experience ***/
+.work2,
+.work4 {
+    display: inline-block;
+    margin-top: 20px;
+    padding-top: 20px;
+    clear: both;
+    right: 0;
+    width: 100%;
+}
+
+.w2Photo {
+    background: url("/img/RR2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: center left;
+    min-height: 420px;
+    float: left;
+    width: 50%;
+}
+
+.w2,
+.w4 {
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+}
+
+.w2 ul,
+.w4 ul {
+    clear: both;
+    border-top: 1px solid rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+.w4Photo {
+    background: url("/img/superstore.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: center left;
+    min-height: 420px;
+    float: left;
+    width: 50%;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+@media screen and (max-width: 900px) {
+
+    .Work {
+        width: 100%;
+    }
+    .Work h1{
+        text-align: left;
+        padding-left: 2%;
+        margin-left: 0;
+    }
+    .w1,
+    .w2,
+    .w3,
+    .w4 {
+        clear: both;
+        float: none;
+        width: 90%;
+        margin-left: 2%;
+    }
+
+    .w1Photo,
+    .w2Photo,
+    .w3Photo,
+    .w4Photo {
+        display: none;
+    }
+
+    .d2 {
+        float: left;
+    }
+}

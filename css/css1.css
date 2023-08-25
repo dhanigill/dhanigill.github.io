@@ -1,0 +1,176 @@
+body {
+  background-color: rgba(227, 223, 223, 0.17);
+  font-family: monospace, "Lucida Console", serif;
+  margin: 0;
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.all {
+  position: relative;
+}
+
+/*
+CSS for header
+*/
+
+#menu {
+  display: none;
+  font-size: 4em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: #000;
+  text-align: right;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+.show {
+  display: block !important;
+  animation: fadeInOpacity .5s ease-in-out;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+
+.header {
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  max-height: 5em;
+  transition: box-shadow .5s;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.shadow {
+  box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
+
+}
+
+.logo {
+  float: left;
+  max-width: 6.5em;
+  position: relative;
+  top: -0.55em;
+  left: 4em;
+}
+
+.nav {
+  position: absolute;
+  right: 4em;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  padding: 0 20px;
+}
+
+.header_link:link {
+  text-decoration: none;
+  color: black;
+}
+
+.header_link:visited {
+  color: black;
+}
+
+.header_link:hover {
+  color: rgb(255, 145, 0);
+  transition: ease-in 0.2s;
+}
+
+.active {
+  color: rgb(255, 145, 0) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    right: 0;
+    flex-direction: column;
+    display: none;
+    margin-top: 0;
+    top: 5em;
+    border: 0px solid transparent;
+    border-bottom-left-radius: 5%;
+    padding: 5em;
+    min-height: 70vh;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .nav li {
+    font-size: 30px;
+    padding: 0.55em 0.15em;
+    display: block;
+  }
+
+  .nav a {
+    text-align: center;
+  }
+
+  #menu {
+    display: block !important;
+    z-index: 2;
+  }
+
+  .logo {
+    position: relative;
+    top: -5.8em;
+    left: 0.25em;
+  }
+
+}
+
+/*** Footer ***/
+.Footer {
+  margin-top: 50px;
+  padding-bottom: 230px;
+  padding-top: 160px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.Footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.time {
+  display: block;
+  background-color: #000;
+  color: white;
+  padding:0 10px;
+  height: 20px;
+}
+#time{
+  float: right;
+}
+#date{
+  float: left;
+}

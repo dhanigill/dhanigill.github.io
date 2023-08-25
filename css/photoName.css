@@ -1,0 +1,66 @@
+.pname {
+    padding-top: 10%;
+    clear: both;
+    min-height: 500px;
+    width: 100%;
+}
+
+.image {
+    background-image: url("/img/IMG_0476.PNG");
+    height: 550px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: 0.95;
+    background-position: -15em 10em;
+}
+
+.mname {
+    margin: auto;
+    font-size: 120px;
+    text-align: left;
+    float: right;
+    line-height: 0.6;
+    letter-spacing: 0em;
+    font-family: "Poppins", "sans serif";
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    position: relative;
+    top: 150px;
+    right: 20%;
+    text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%),
+        0 3px 0 hsl(174, 5%, 70%), 0 4px 0 hsl(174, 5%, 66%),
+        0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%),
+        0 7px 0 hsl(174, 5%, 61%), 0 8px 0 hsl(174, 5%, 60%),
+        0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2),
+        0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2),
+        0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+@media screen and (max-width: 900px) {
+    .image {
+        background-position: -10em 10em;
+    }
+
+    .mname {
+        font-size: 40px;
+        right: 0;
+        top: 300px;
+        line-height: 0.7;
+    }
+
+    .mname span {
+        font-size: 45px !important;
+    }
+}
