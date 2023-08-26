@@ -73,12 +73,39 @@
 @media screen and (max-width: 900px) {
   .Extras {
     display: block;
-    margin-top: 0;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 2em 0.7em 0 0.7em;
+    width: auto;
+    padding: 2em 0;
   }
 
   .Extras h1 {
     margin-left: 0;
+    text-align: center;
+
   }
 
-  
+  .Extras img{
+    height: auto;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+  .certif{
+    border:0;
+    border-bottom: 1px rgba(0, 0, 0, 0.17) solid;
+  }
+  .languages{
+    border: 0;
+    margin: 2em 0;
+    border-bottom: 1px rgba(0, 0, 0, 0.17) solid;
+  }
+  .skills{
+    border:0;
+    margin: 2em 0;
+    border-bottom: 1px rgba(0, 0, 0, 0.17) solid;
+  }
+  .softwares{
+    border: 0;
+  }
 }

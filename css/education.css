@@ -1,71 +1,79 @@
 .Education {
-    margin-top: 100px;
-    line-height: 1.5;
-    opacity: 0;
-    transform: none;
-    margin-bottom: 100px;
-    clear: both;
-    display: inline-block;
-    width: 100%;
+  margin-top: 100px;
+  line-height: 1.5;
+  opacity: 0;
+  transform: none;
+  margin-bottom: 100px;
+  clear: both;
+  display: inline-block;
+  width: 100%;
 }
 
 .EduPhoto {
-    background: url("/img/Edu.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 60%;
-    background-position: -200px 180px;
-    min-height: 450px;
-    float: left;
-    width: 50%;
-    position: relative;
-    top: 90px;
+  background: url("/img/Edu.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 60%;
+  background-position: -200px 180px;
+  min-height: 450px;
+  float: left;
+  width: 50%;
+  position: relative;
+  top: 90px;
 }
 
 .edu {
-    float: right;
-    position: relative;
-    right: 10%;
+  float: right;
+  position: relative;
+  right: 10%;
 }
 
 .Education h1 {
-    color: rgb(255, 145, 0);
-    top: 0;
-    padding: 30px 30px 30px 0;
-    margin-top: 50px;
-    text-align: left;
+  color: rgb(255, 145, 0);
+  top: 0;
+  padding: 30px 30px 30px 0;
+  margin-top: 50px;
+  text-align: left;
 }
 
 .Education p,
 .Education ul {
-    text-align: left;
-    list-style: square;
+  text-align: left;
+  list-style: square;
 }
 .fadeOut {
-    opacity: 0;
-    transition: opacity 1s;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 1s;
+}
+@media screen and (max-width: 900px) {
+  .Education {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 2em 0.7em 0 0.7em;
+    background: linear-gradient(rgba(152, 152, 152, 0.17), rgba(0, 0, 0, 0));
+  }
+
+  .EduPhoto {
+    display: none;
+  }
+
+  .Education h1 {
+    padding-top:1em;
+    margin: 0;
+    text-align: center;
+  }
+
+  .edu {
+    left: 0;
+    padding: 0 2%;
   }
   
-  .fadeIn {
-    opacity: 1;
-    transition: opacity 1s;
-  }
-  @media screen and (max-width: 900px) {
-
-    .Education {
-      width: 100%;
-      margin-left: 0;
-      text-align: left;
-
-    }
-  
-    .EduPhoto {
-      display: none;
-    }
-  
-    .edu {
-      left: 0;
-      padding: 0 2%;
-      float: left;
-    }
 }

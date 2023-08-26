@@ -1,40 +1,57 @@
 .bio {
-    clear: both;
-    opacity: 0;
-    transform: none;
-    margin-bottom: 100px;
-    height: 300px;
-    margin: 0px 2%;
-    width: 50%;
+  clear: both;
+  opacity: 0;
+  transform: none;
+  margin-bottom: 100px;
+  height: 300px;
+  margin: 0px 2%;
+  width: 50%;
 }
 
 .bio h1 {
-    float: left;
-    color: rgb(255, 145, 0);
-    top: 0;
-    padding: 30px 0;
-    margin-top: 50px;
-    text-align: left;
+  float: left;
+  color: rgb(255, 145, 0);
+  top: 0;
+  padding: 30px 0;
+  margin-top: 50px;
+  text-align: left;
 }
 
 .bio p {
-    float: left;
-    padding-top: 50px;
-    line-height: 1.5;
+  float: left;
+  padding-top: 50px;
+  line-height: 1.5;
 }
 
 .fadeOut {
-    opacity: 0;
-    transition: opacity 1s;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .fadeIn {
-    opacity: 1;
-    transition: opacity 1s;
+  opacity: 1;
+  transition: opacity 1s;
 }
 @media screen and (max-width: 900px) {
+  .bio {
+    width: auto;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 2em 0.7em 0 0.7em;
+    background: linear-gradient(rgba(152, 152, 152, 0.17), rgba(0, 0, 0, 0));
+    max-height: 100%;
+    padding-bottom: 3em;
+}
 
-    .bio {
-      width: 96%;
-    }
+  .bio h1{
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding: 0 2%;
+    padding-top: 1em;
+  }
+
+  .bio p{
+    padding: 0 2%;
+    padding-top: 1em;
+  }
 }
