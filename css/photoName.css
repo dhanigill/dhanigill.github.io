@@ -51,6 +51,7 @@
 @media screen and (max-width: 900px) {
     .image {
         background-position: -10em 10em;
+        box-shadow: inset -120px -6em 25px 15px rgb(251, 248, 248);    
     }
 
     .mname {

@@ -134,7 +134,8 @@
   .Work {
     width: auto;
     background: linear-gradient(rgba(152, 152, 152, 0.17), rgba(0, 0, 0, 0));
-    border: 2px solid rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4em;
     margin: 2em 0.7em 0 0.7em;
   }
   .Work h1 {
