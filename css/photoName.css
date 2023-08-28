@@ -50,18 +50,20 @@
 
 @media screen and (max-width: 900px) {
     .image {
-        background-position: -10em 10em;
-        box-shadow: inset -120px -6em 25px 15px rgb(251, 248, 248);    
+        background-position: -10em 17em;
+        box-shadow: inset -120px -0.7em 25px 15px rgb(251, 248, 248);  
+        height: 570px;  
     }
 
     .mname {
-        font-size: 40px;
-        right: 0;
-        top: 300px;
+        font-size: 50px;
+        right:3%;
+        text-align: right;
+        top: 190px;
         line-height: 0.7;
     }
 
     .mname span {
-        font-size: 45px !important;
+        font-size: 55px !important;
     }
 }
