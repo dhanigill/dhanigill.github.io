@@ -52,7 +52,8 @@
     .image {
         background-position: -10em 17em;
         box-shadow: inset -120px -0.7em 25px 15px rgb(251, 248, 248);  
-        height: 570px;  
+        height: 600px;  
+        background-size: 110%;
     }
 
     .mname {
