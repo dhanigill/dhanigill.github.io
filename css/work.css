@@ -75,7 +75,8 @@
 
 /*** CSS for right side work experience ***/
 .work2,
-.work4 {
+.work4,
+.work5 {
   display: inline-block;
   margin-top: 20px;
   padding-top: 20px;
@@ -96,14 +97,16 @@
 }
 
 .w2,
-.w4 {
+.w4,
+.w5 {
   width: 40%;
   float: right;
   margin-right: 20px;
 }
 
 .w2 ul,
-.w4 ul {
+.w4 ul,
+.w5 ul {
   clear: both;
   border-top: 1px solid rgb(0, 0, 0);
   padding-top: 20px;
@@ -115,6 +118,17 @@
   background-attachment: fixed;
   background-size: 60%;
   background-position: center left;
+  min-height: 420px;
+  float: left;
+  width: 50%;
+}
+
+.w5Photo {
+  background: url("/img/uww.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 70%;
+  background-position: -150px 90px;
   min-height: 420px;
   float: left;
   width: 50%;
@@ -147,7 +161,8 @@
   .w1,
   .w2,
   .w3,
-  .w4 {
+  .w4,
+  .w5 {
     clear: both;
     float: none;
     width: 90%;
@@ -157,26 +172,28 @@
   .w1 ul,
   .w2 ul,
   .w3 ul,
-  .w4 ul {
+  .w4 ul,
+  .w5 ul {
     border-top: 0;
   }
 
   .w1Photo,
   .w2Photo,
   .w3Photo,
-  .w4Photo {
+  .w4Photo,
+  .w5Photo {
     display: none;
   }
 
-  .d2,.d4 {
+  .d2,.d4, .d5 {
     float: right;
   }
   
-  .work1, .work2, .work3{
+  .work1, .work2, .work3, .work5{
     border-bottom: 1px rgba(0, 0, 0, 0.17) solid;
   }
 
-  .work1{
+  .work5{
     margin-top: 0;
     padding-top: 0;
   }

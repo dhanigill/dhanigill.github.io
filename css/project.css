@@ -1,3 +1,70 @@
+/*** Properties for project .html ***/
+.test {
+  background-image: url("/img/tepro.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.65;
+  position: relative;
+}
+
+.stillblank {
+  clear: both;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 12em;
+  margin: 0 20px;
+  z-index: 1;
+  padding-bottom: 50px;
+  height: 80vh;
+}
+
+.projPhoto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.projPhoto a img {
+  border: 2px solid black;
+  box-shadow: 5px 5px 25px 1px #000000;
+  position: relative;
+  width: 100%;
+  opacity: .9;
+}
+
+.projPhoto a img:hover {
+  transform: scale(1.1);
+  transition: .7s ease;
+}
+
+.textProj {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px 40px 40px 40px;
+}
+
+.textProj h3 {
+  height: 50%;
+}
+
+.textProj img {
+  position: relative;
+  transform: rotate(210deg);
+  width: 50%;
+  top: -5em;
+  left: -10em;
+}
+
 /***** Different display sizes ****/
 @media screen and (max-width: 900px) {
 
@@ -29,83 +96,4 @@
     display: none;
   }
 
-}
-
-/***** Properties for transition fade function *****/
-.fadeOut {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.fadeIn {
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-/*** Properties for project .html ***/
-.test {
-  background-image: url("/img/tepro.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 500px;
-  background-size: cover;
-  opacity: 0.65;
-  position: relative;
-}
-
-.stillblank {
-  clear: both;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 12em;
-  margin: 0 20px;
-  z-index: 1;
-  padding-bottom: 50px;
-}
-
-.projPhoto {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-}
-
-.projPhoto a img {
-  border: 2px solid black;
-  box-shadow: 5px 5px 25px 1px #000000;
-  position: relative;
-  width: 100%;
-  opacity: .9;
-}
-
-.projPhoto a img:hover {
-  transform: scale(1.1);
-  transition: .7s ease;
-}
-
-.textProj {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 40px 40px 40px 40px;
-}
-
-.textProj h3 {
-  height: 50%;
-}
-
-.textProj img {
-  position: relative;
-  transform: rotate(210deg);
-  width: 50%;
-  top: -5em;
-  left: -10em;
 }

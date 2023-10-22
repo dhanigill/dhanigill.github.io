@@ -5,10 +5,12 @@ body {
   display: block;
   width: 100%;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .all {
-  position: relative;
+  position: relative;  
 }
 
 /*
@@ -59,6 +61,7 @@ CSS for header
   transition: box-shadow .5s;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  left: 0;
 }
 
 .shadow {
