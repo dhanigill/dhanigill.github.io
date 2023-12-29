@@ -26,12 +26,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // function for header's shadow
   const Pname = document.getElementsByClassName("pname");
   const header = document.getElementsByClassName("header");
+  const nav = document.getElementsByClassName("navli");
+  const logo = document.getElementsByClassName("logo");
+
   const handler = new IntersectionObserver((entries) => {
     if (header) {
       if (!entries[0].isIntersecting) {
         header[0].classList.add("shadow");
+        
+        for (let i = 0; i < nav.length; i++) {
+          nav[i].classList.add("fontsmall");
+        };
+        logo[0].classList.add("logowidth");
+        
       } else {
         header[0].classList.remove("shadow");
+
+        for (let i = 0; i < nav.length; i++) {
+          nav[i].classList.remove("fontsmall");
+      };
+      logo[0].classList.remove("logowidth");
+
       }
     }
   });
@@ -40,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     handler.observe(Pname[0]);
   }
+
   // Fade in and out
 
   const elemName1 = document.querySelector(".mname");
@@ -107,4 +123,5 @@ document.addEventListener("DOMContentLoaded", function () {
     return i;
   }
   startTime();
+
 });
