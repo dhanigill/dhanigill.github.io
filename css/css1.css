@@ -57,8 +57,9 @@ CSS for header
   position: fixed;
   width: 100%;
   z-index: 999;
-  max-height: 5em;
+  max-height: 6.5em;
   transition: box-shadow .5s;
+  transition: max-height .5s;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   left: 0;
@@ -66,15 +67,20 @@ CSS for header
 
 .shadow {
   box-shadow: 7px 10px 43px -20px rgba(0, 0, 0, 0.75);
-
+  max-height: 5em;
 }
 
 .logo {
   float: left;
-  max-width: 6.5em;
+  max-width: 8.5em;
   position: relative;
   top: -0.55em;
   left: 4em;
+  transition: max-width .5s;
+}
+
+.logowidth{
+  max-width: 6.5em !important;
 }
 
 .nav {
@@ -82,14 +88,19 @@ CSS for header
   right: 4em;
 }
 
-.nav li {
+.navli {
   list-style: none;
   display: inline-block;
   margin-top: 10px;
-  font-size: 25px;
   font-weight: bold;
   text-align: right;
   padding: 0 20px;
+  font-size: 40px;
+  transition: font-size .5s;
+}
+
+.fontsmall{
+  font-size: 30px !important;
 }
 
 .header_link:link {
@@ -110,6 +121,48 @@ CSS for header
   color: rgb(255, 145, 0) !important;
 }
 
+/*
+Header CSS Ends
+*/
+
+
+/*** Footer ***/
+.Footer {
+  margin-top: 50px;
+  padding-bottom: 230px;
+  padding-top: 160px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.Footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.time {
+  display: block;
+  background-color: #000;
+  color: white;
+  padding:0 10px;
+  height: 20px;
+}
+#time{
+  float: right;
+}
+#date{
+  float: left;
+}
+
+/*
+Footer CSS Ends 
+*/
+
+/*
+Media screen CSS
+*/
 @media screen and (max-width: 900px) {
   .nav {
     right: 0;
@@ -146,34 +199,4 @@ CSS for header
     left: 0.25em;
   }
 
-}
-
-/*** Footer ***/
-.Footer {
-  margin-top: 50px;
-  padding-bottom: 230px;
-  padding-top: 160px;
-  text-align: center;
-  width: 100%;
-  bottom: 0;
-}
-
-.Footer ul li {
-  display: inline-block;
-  list-style: none;
-  margin-top: 10px;
-}
-
-.time {
-  display: block;
-  background-color: #000;
-  color: white;
-  padding:0 10px;
-  height: 20px;
-}
-#time{
-  float: right;
-}
-#date{
-  float: left;
 }
