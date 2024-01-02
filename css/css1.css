@@ -22,7 +22,7 @@ CSS for header
   font-size: 4em;
   font-weight: 400;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 0.75rem;
   color: #000;
   text-align: right;
 }
@@ -88,7 +88,7 @@ CSS for header
   right: 4em;
 }
 
-.navli {
+.navli{
   list-style: none;
   display: inline-block;
   margin-top: 10px;
@@ -195,7 +195,7 @@ Media screen CSS
 
   .logo {
     position: relative;
-    top: -5.8em;
+    top: -7.2em;
     left: 0.25em;
   }
 
